@@ -1,0 +1,28 @@
+
+---
+
+## 🧠 Funcionamento da aplicação
+
+1. A aplicação acessa o diretório público de demonstrações contábeis da ANS
+2. Extrai os nomes dos arquivos ZIP disponíveis no HTML
+3. Identifica o ano e o trimestre a partir do nome dos arquivos
+4. Remove períodos duplicados e ordena cronologicamente
+5. Solicita ao usuário a quantidade de últimos trimestres
+6. Filtra os arquivos correspondentes aos períodos selecionados
+7. Realiza o download binário dos arquivos ZIP
+
+---
+
+## 📌 Observações e melhorias futuras
+
+- O ano base está fixado em 2025 (possibilidade de update na regra)
+- O projeto pode ser evoluído para identificar automaticamente o ano mais recente disponível
+- Pode-se adicionar tratamento mais robusto de erros e logs
+- O download pode ser paralelizado para melhorar desempenho
+
+---
+
+## 📄 Fonte dos dados
+
+Os dados utilizados são provenientes do portal oficial de dados abertos da ANS:  
+https://dadosabertos.ans.gov.br/
